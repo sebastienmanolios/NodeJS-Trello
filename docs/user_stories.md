@@ -14,4 +14,4 @@
 |User| Modify a tag | modify its name |
 |User| Delete a tag | to dissociate it from all its cards |
 |User| To associate a tag to a card | … |
-|User| To associate a tag from a card | … |
+|User| To dissociate a tag from a card | … |
