@@ -1,0 +1,33 @@
+list (
+    id INT, 
+    name TEXT, 
+    position INT, 
+    creation date DATETIME, 
+    update date DATETIME
+)
+
+cart (
+    id INT, 
+    title TEXT, 
+    position INT, 
+    color TEXT, 
+    creation date DATETIME, 
+    update date DATETIME 
+    liste("id") INT
+)
+
+tag (
+    id INT,
+    name TEXT,
+    color TEXT,
+    creation date DATETIME, 
+    update date DATETIME
+)
+
+// This table is created because of the (n,n) association
+cart linked to tags (
+    id INT, 
+    cart("id") INT, 
+    tag("id") INT, 
+    creation date DATETIME, 
+)
