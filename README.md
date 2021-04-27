@@ -23,8 +23,8 @@ There are some documents in the repository /docs  in order to understand what yo
   - Create a role & database in postgress & configure .env using the .env.example
   - 1$  ``` sudo -i -u postgres```
   - 2$ ``` psql```
-  - 3$ ``` CREATE ROLE trello WITH LOGIN PASSWORD 'trello'```
-  - 4$ ``` CREATE DATABASE trello OWNER trello ```
+  - 3 ``` CREATE ROLE trello WITH LOGIN PASSWORD 'trello';```
+  - 4 ``` CREATE DATABASE trello OWNER trello; ```
   - 5$ ``` psql -d trello -U trello -f ./data/create_db.sql```
   - 6$ Create & write``` PG_URL=postgresql://trello:trello@localhost:5432/trello``` in .env
   - And finally $ ``` node index.js```
